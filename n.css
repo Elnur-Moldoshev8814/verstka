@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Orbitron&family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    vertical-align: baseline;
+    transition: 0.3s;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 35px calc(30px + 60 * (100vw / 1440));
+}
+
+/* based */
+
+
+.mini_title{
+    font-weight: 400;
+    font-size: calc(25px + 37 * (100vw / 1400));
+    text-transform: capitalize;
+    color: #222730;
+}
+.subtitle_16{
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+}
+.subtitle_20{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(223, 223, 223, 0.8);    
+}
+.title{
+    font-size: calc(24px + 40 * (100vw / 1440));
+    text-transform: capitalize;
+    color: #FFFFFF;    
+}
+.blue{
+    color: #57B8FF;
+}
+.title_36{
+    font-size: calc(12px + 24 * (100vw / 1440));
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.subtitle_23{
+    font-size: calc(8px + 15 * (100vw / 1440));
+    color: white   ;
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    background: #FDD04A;
+}
+.home__box{
+    display: flex;
+    align-items: center;
+    row-gap: 45px ;
+    flex-direction: column;
+    justify-content: center;
+}
+.home__text-box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    text-align: center;
+    align-items: center;
+    max-width: 576px;
+}
+.home__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:end;
+    grid-gap:15px;
+}
+.home_wrappers{
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.35);
+    padding: 10px 15px;
+}
+.img{
+    width: 100%;
+}
+
+/* black */
+
+.black{
+    width: 100%;
+    background: black;
+}
+.black__box{
+    display: flex;
+    column-gap: 35px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.black__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    max-width: 684px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.black__text-under{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.btn{
+    padding: 20px 30px;
+    max-width: 205px;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    background: #57B8FF;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #57B8FF;
+    background: white;
+    box-shadow: 10px 10px 0px #57B8FF;
+}
+
+/* many */
+
+.many{
+    background: black;
+    width: 100%;
+}
+.many__box{
+    display: flex;
+    /* flex-wrap: wrap; */
+    grid-gap: 20px;
+    justify-content: space-around;
+    align-items: end;
+}
+.many__left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+.many__right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 70px;
+}
+.many__wrappers{
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    grid-template-rows:repeat(2, auto); 
+    grid-gap: 25px;
+}
+.many_wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.many_wrapper-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+@media (max-width: 750px) {
+    .many__box{
+        flex-wrap: wrap;
+    }
+    .many__right, .black__text-under{
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .mini_title, .subtitle_16, .subtitle_20, .title, .title_36, .subtitle_23{
+        text-align: center;
+    }
+    .many__wrappers{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
